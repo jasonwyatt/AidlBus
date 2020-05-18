@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "us.jwf.aidlbus";
+option java_outer_classname = "EventBusProtos";
+
+message Event {
+  string channel = 1;
+  string type = 2;
+  int32 data = 3; // Would be a VersionMap in arcs.
+}

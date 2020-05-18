@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recyclerView"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginTop="8dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/oddsSubToggle" />
+
+  <Switch
+      android:id="@+id/evensToggle"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      android:text="Evens"
+      app:layout_constraintEnd_toStartOf="@+id/oddsToggle"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Switch
+      android:id="@+id/oddsToggle"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:text="Odds"
+      app:layout_constraintEnd_toStartOf="@+id/fiboToggle"
+      app:layout_constraintStart_toEndOf="@+id/evensToggle"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Switch
+      android:id="@+id/fiboToggle"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="8dp"
+      android:text="Fibonacci"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/oddsToggle"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Switch
+      android:id="@+id/evensSubToggle"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:text="Subscribe"
+      app:layout_constraintEnd_toEndOf="@+id/evensToggle"
+      app:layout_constraintStart_toStartOf="@+id/evensToggle"
+      app:layout_constraintTop_toBottomOf="@+id/evensToggle" />
+
+  <Switch
+      android:id="@+id/oddsSubToggle"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:text="Subscribe"
+      app:layout_constraintEnd_toEndOf="@+id/oddsToggle"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toEndOf="@+id/evensToggle"
+      app:layout_constraintTop_toBottomOf="@+id/oddsToggle" />
+
+  <Switch
+      android:id="@+id/fiboSubToggle"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:text="Subscribe"
+      app:layout_constraintEnd_toEndOf="@+id/fiboToggle"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/oddsToggle"
+      app:layout_constraintTop_toBottomOf="@+id/fiboToggle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
